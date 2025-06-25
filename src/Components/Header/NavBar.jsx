@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NavBar = () => {
+const NavBar = ({credit}) => {
     return (
        <nav className="flex lg:justify-between gap-5 mb-6">
         <div className="logo">
@@ -16,7 +16,7 @@ const NavBar = () => {
      </ul>
         
         <button className="flex gap-1 items-center px-2 py-1 border-1  rounded-[7px]">
-            <h3><span>0</span> Coin</h3>
+            <h3><span>{credit}</span> TK</h3>
             <img className="h-8" src="https://img.icons8.com/?size=96&id=LVIob8w9LnNE&format=gif" alt="" />
         </button>
         </div>
